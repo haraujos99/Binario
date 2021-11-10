@@ -11,6 +11,6 @@ function traduzBinario(nNatural){
     console.log(bin.join(''));// .join('') transforma o array em string e exclui as virgulas do array
 }     
 
-var nNatural = 986;
+var nNatural = 986; //Aletre para o valor desejado
 console.log(nNatural);
 traduzBinario(nNatural);
