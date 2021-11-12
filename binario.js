@@ -1,7 +1,5 @@
-//funcional apenas para numeros naturais
-function traduzBinario(nNatural){
+function traduzBinario(num){
     var bin =[];
-    var num = nNatural;
 
     while (divInt !=0){
         var divInt = Math.floor(num / 2);//Retorna a parte inteira da divisão
@@ -11,6 +9,33 @@ function traduzBinario(nNatural){
     console.log(bin.join(''));// .join('') transforma o array em string e exclui as virgulas do array
 }     
 
-var nNatural = 986; //Aletre para o valor desejado
-console.log(nNatural);
-traduzBinario(nNatural);
+function BinarioDecimal(num){
+    var binInvert = [];
+    var decimal = 0;
+
+    //Inverter os termos da string e jogar no array
+    for (let i = 0 ; i < num.length ; i++){
+
+        binInvert.unshift(num[i]);
+        
+    }
+
+    //Fazer a operação para transformar de volta o binário em decimal
+    for (let c = 0 ; c < binInvert.length ; c++){
+                            //(0 ou 1) x 2^c
+        decimal = decimal + binInvert[c]*(2**c);
+
+    }
+
+
+    console.log(num);
+    console.log(decimal);
+}
+
+var nDecimal = 986;
+traduzBinario(nDecimal); //Transforma o decimal em binário
+
+
+
+var nBinario = '1111011010'
+BinarioDecimal(nBinario); //Transforma o binário em decimal
