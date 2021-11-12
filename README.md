@@ -1,2 +1,2 @@
 # Binario
-Script que converte número decimal em binário
+Script que converte número decimal em binário e faz o inverso também.
